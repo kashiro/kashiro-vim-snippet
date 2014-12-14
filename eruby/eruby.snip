@@ -1,0 +1,55 @@
+snippet ert
+abbr    <% target  %>
+options word
+  <% ${1:target} %>
+
+snippet ert
+abbr    <%= target  %>
+options word
+  <%= ${1:target} %>
+
+snippet eri
+abbr    <%= if %>
+options word
+  <% if ${1} then %>
+    ${1}
+  <% end %>
+
+snippet ere
+abbr    <%= earch %>
+options word
+  <% ${1}.each do |${2}| %>
+    ${3}
+  <% end %>
+
+snippet err
+abbr    <%= render %>
+options word
+  <%= render "${1}" %>
+
+snippet erl
+abbr    <%= link_to %>
+options word
+  <%= link_to ${1:text}, ${2:path}, ${3:options} %>
+
+snippet erf
+abbr    <%= form_for %>
+options word
+  <%= form_for ${1} do |f| %>
+    ${1}
+  <% end %>
+
+snippet erfl
+abbr    <%= f.label %>
+options word
+  <%= f.label ${1} %>
+
+snippet erft
+abbr    <%= f.text_field %>
+options word
+  <%= f.text_field ${1} %>
+
+snippet erfs
+abbr    <%= f.submit %>
+options word
+  <%= f.submit ${1} %>
