@@ -1,0 +1,27 @@
+snippet des
+abbr describe('', function(){});
+options head
+  describe('${1}', function(${2}){
+    ${3}
+  });
+
+snippet it
+abbr it('', function);
+options head
+  it('${1}', function(${2}){
+    ${3}
+  });
+
+snippet bef
+abbr beforeEach
+options head
+  beforeEach(function(){
+    ${1}
+  });
+
+snippet aft
+abbr afterEach
+options head
+  afterEach(function(){
+    ${1}
+  });
