@@ -1,0 +1,60 @@
+snippet ete
+abbr ==
+options head
+  expect(${1:#:result}).to eq(${2:#:expect})
+
+snippet etel
+abbr eql?()
+options head
+  expect(${1:#:result}).to eql(${2:#:expect})
+
+snippet etb
+abbr equal?()
+options head
+  expect(${1:#:result}).to be(${2:#:expect})
+
+snippet etbg
+abbr >
+options head
+  expect(${1:#:result}).to be > ${2:#:expect}
+
+snippet etbge
+abbr >=
+options head
+  expect(${1:#:result}).to be >= ${2:#:expect}
+
+snippet etble
+abbr <=
+options head
+  expect(${1:#:result}).to be <= ${2:#:expect}
+
+snippet etbl
+abbr <
+options head
+  expect(${1:#:result}).to be < ${2:#:expect}
+
+snippet etbw
+abbr within
+options head
+  expect(${1:#:result}).to be_within(${2:#:detail}).of(${3:#:expect})
+
+snippet etm
+abbr match
+options head
+  expect(${1:#:result}).to match(/${2:#:expect}/)
+
+snippet etbt
+abbr be true
+options head
+    expect(${1:#:result}).to be_truthy
+
+snippet etbf
+abbr be false
+options head
+    expect(${1:#:result}).to be_falsy
+
+snippet etbn
+abbr be nil
+options head
+    expect(${1:#:result}).to be_nil
+
