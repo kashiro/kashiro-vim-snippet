@@ -1,0 +1,117 @@
+priority -50
+##################################################
+# sinonjs
+#################################################
+snippet spy "sinon.spy();"
+sinon.spy();
+endsnippet
+
+snippet spy "sinon.spy(obj, func);"
+sinon.spy(${1}, '${2}');
+endsnippet
+##################################################
+# mocha
+#################################################
+snippet des "describe('', function(){});"
+describe('${1}', function(${2}){
+	${3}
+});
+endsnippet
+
+snippet it "it('', function);"
+it('${1}', function(${2}){
+	${3}
+});
+endsnippet
+
+snippet bef "beforeEach"
+beforeEach(function(){
+	${1}
+});
+endsnippet
+
+snippet aft "afterEach"
+afterEach(function(){
+	${1}
+});
+endsnippet
+
+##################################################
+# expectjs
+#################################################
+
+snippet ef "expect fail"
+expect(${1:#:result}).fail(${2:#:expect});
+endsnippet
+
+snippet etb "expect to be"
+expect(${1:#:result}).to.be(${2:#:expect});
+endsnippet
+
+snippet etba "expect to be a"
+expect(${1:#:result}).to.be.a(${2:#:expect});
+endsnippet
+
+snippet etbab "expect to be above"
+expect(${1:#:result}).to.be.above(${2:#:expect});
+endsnippet
+
+snippet etban "expect to be an"
+expect(${1:#:result}).to.be.an(${2:#:expect});
+endsnippet
+
+snippet etbb "expect to be below"
+expect(${1:#:result}).to.be.below(${2:#:expect});
+endsnippet
+
+snippet etbe "expect to be empty"
+expect(${1:#:result}).to.be.empty(${2:#:expect});
+endsnippet
+
+snippet etbo "expect to be ok"
+expect(${1:#:result}).to.be.ok();
+endsnippet
+
+snippet etbw "expect to be within"
+expect(${1:#:result}).to.be.within(${2:#:expect});
+endsnippet
+
+snippet etc "expect to contain"
+expect(${1:#:result}).to.contain(${2:#:expect});
+endsnippet
+
+snippet ete "expect eql"
+expect(${1:#:result}).to.eql(${2:#:expect});
+endsnippet
+
+snippet eteq "expect to equal"
+expect(${1:#:result}).to.equal(${2:#:expect});
+endsnippet
+
+snippet ethk "expect to have key"
+expect(${1:#:result}).to.have.key(${2:#:expect});
+endsnippet
+
+snippet ethl "expect to have length"
+expect(${1:#:result}).to.have.length(${2:#:expect});
+endsnippet
+
+snippet ethp "expect to have property"
+expect(${1:#:result}).to.have.property(${2:#:expect});
+endsnippet
+
+snippet etm "expect to match"
+expect(${1:#:result}).to.match(${2:#:expect});
+endsnippet
+
+snippet etohk "expect to only have keys"
+expect(${1:#:result}).to.only.have.keys(${2:#:expect});
+endsnippet
+
+snippet ett "expect to throwError"
+expect(${1:#:result}).to.throwError(${2:#:expect});
+endsnippet
+
+snippet ett "expect to throwException"
+expect(${1:#:result}).to.throwException(${2:#:expect});
+endsnippet
